@@ -1,0 +1,49 @@
+{
+    "shoes": [
+      {
+        "name": "Nike Air Max Infinity",
+        "model": "AM-INF24",
+        "price": 180,
+        "colorways": [
+          {
+            "name": "Black",
+            "image": "/images/air-max-infinity-black.jpg"
+          },
+          {
+            "name": "White",
+            "image": "/images/air-max-infinity-white.jpg"
+          },
+          {
+            "name": "Volt",
+            "image": "/images/air-max-infinity-volt.jpg"
+          }
+        ],
+        "description": "The Nike Air Max Infinity redefines comfort and performance with its innovative design. Featuring a full-length Air Max unit for ultimate cushioning, targeted support for a secure fit, and a breathable mesh upper for optimal airflow, this shoe is perfect for runners and athletes seeking the perfect balance of comfort and performance.",
+        "features": [
+          {
+            "name": "Responsive Cushioning",
+            "description": "The Air Max unit provides exceptional shock absorption and responsiveness for a smooth and comfortable ride."
+          },
+          {
+            "name": "Targeted Support",
+            "description": "Strategic reinforcements in the upper offer a secure and supportive fit for confident strides."
+          },
+          {
+            "name": "Breathable Upper",
+            "description": "Lightweight and breathable materials help keep your feet cool and dry during your runs."
+          }
+        ],
+        "technology": [
+          {
+            "name": "Air Max Unit",
+            "description": "Full-length Air Max unit for maximum cushioning and impact protection."
+          },
+          {
+            "name": "Flyknit Upper",
+            "description": "Engineered knit upper provides lightweight support and breathability."
+          }
+        ]
+      }
+    ]
+  }
+  

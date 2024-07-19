@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 30px;
+  color: white;
+  font-weight: 500;
+  
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+header {
+  background: whitesmoke;
+  /* color: white; */
+  position: sticky ;
+  top: 0;
+  z-index: 1000;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+  margin: 0 auto;
+  
+  max-width: 1200px;
+  padding: 0 24px;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav li a{
+  text-decoration: none;
+  color: var(--gray);
+  /* color: white; */
+  cursor: pointer;
+}
+
+
+.shopping p {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.shop-name {
+  display: flex;
+  gap: 20px;
+}
+
+.shop-name img {
+  cursor: pointer;
+}
