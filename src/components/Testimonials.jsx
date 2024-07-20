@@ -46,7 +46,7 @@ const TestimonialSection = () => {
 
   return (
     <Parallax
-      bgImage="/public/images/testimonial-bg.png"
+      bgImage="/images/testimonial-bg.png"
       strength={300}
       bgImageStyle={{ height: "100%", width: "100%", objectFit: "cover" }}
       blur={1}

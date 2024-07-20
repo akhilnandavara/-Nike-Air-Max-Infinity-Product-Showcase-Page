@@ -7,7 +7,7 @@ import "../styles/HeroSection.css";
 const HeroSection = () => {
   return (
     <Parallax
-      bgImage="/public/images/bg-1.png"
+      bgImage="/images/bg-1.png"
       strength={500}
       
       bgImageStyle={{  height: "100%", width: "100%",objectFit: "cover" }}
