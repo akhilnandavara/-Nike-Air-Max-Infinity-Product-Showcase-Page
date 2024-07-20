@@ -1,0 +1,43 @@
+
+header {
+    background: whitesmoke;
+    /* color: white; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    margin: 0 auto;
+  
+    max-width: 1200px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+  nav ul li {
+  display: inline;
+}
+nav ul li {
+    display: inline;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: var(--gray);
+    /* color: white; */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ff6f61;
+  }
