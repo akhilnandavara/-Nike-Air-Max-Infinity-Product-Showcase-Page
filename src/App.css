@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap");
 
 :root {
   --red: #ff6f61;
   --gray: #2e2e2e;
+  --primary-color: #333;
+  --secondary-color: #666;
+  --highlight-color: #ff5733;
+  --background-color: #f9f9f9;
+  --border-color: #e0e0e0;
 }
+
 
 * {
   margin: 0;
@@ -11,7 +16,10 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Helvetica Now Text', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .container {
@@ -81,6 +89,35 @@ nav li a {
 
 .shop-name img {
   cursor: pointer;
+}
+
+
+.shop-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.shop-heading {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, var(--highlight-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shop-description {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 

@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const Shop = () => (
-  <div>
-    <h1>Shop</h1>
-    <p>Shop the latest Nike Air Max Infinity.</p>
+  <div className="shop-container">
+    <h1 className="shop-heading">Shop</h1>
+    <p className="shop-description">Shop the latest Nike Air Max Infinity and experience unmatched comfort and style.</p>
   </div>
 );
 

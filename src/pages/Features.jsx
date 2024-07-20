@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Features = () => (
-  <div>
-    <h1>Features</h1>
-    <p>Details about the features of Nike Air Max Infinity.</p>
+  <div className="shop-container">
+    <h1 className="shop-heading">Key Features</h1>
+    <p className="shop-description">
+      Discover the standout features of the Nike Air Max Infinity:
+    </p>
   </div>
 );
 

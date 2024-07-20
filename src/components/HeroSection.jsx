@@ -2,7 +2,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import { motion } from "framer-motion";
-import "./HeroSection.css";
+import "../styles/HeroSection.css";
 
 const HeroSection = () => {
   return (

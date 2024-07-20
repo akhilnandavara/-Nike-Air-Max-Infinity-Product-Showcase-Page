@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Parallax } from "react-parallax";
 import { AnimatePresence, motion } from "framer-motion";
-import "./TestimonialSection.css"; // Ensure this file is correctly imported
+import "../styles/TestimonialSection.css";
+
 
 const TestimonialSection = () => {
   const [selectedId, setSelectedId] = useState(null);

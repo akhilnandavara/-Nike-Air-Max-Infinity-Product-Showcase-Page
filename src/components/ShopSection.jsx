@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../data.json";
-import "./ShopSection.css";
+import "../styles/ShopSection.css";
+
 
 const ShopSection = () => {
   const shoe = data.shoes[0];
