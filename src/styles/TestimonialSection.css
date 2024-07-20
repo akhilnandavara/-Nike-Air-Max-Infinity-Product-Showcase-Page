@@ -1,62 +1,130 @@
 /* src/components/TestimonialSection.css */
 .testimonial-section {
   position: relative;
-  padding: 50px 20px;
-  min-height: 400px;
+  padding: 30px 15px; /* Adjusted padding for smaller screens */
+  height: auto; /* Allows height to adapt based on content */
   background-color: rgba(248, 248, 248, 0.6); /* Semi-transparent background for readability */
+min-height: 25rem; /* Ensure a minimum height to prevent content from being too squished */
 }
 
 .testimonial-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #333;
+    text-align: center;
+  
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    background: linear-gradient(to right, var(--highlight-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
 }
 
 .testimonial-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px; /* Adjusted gap for smaller screens */
   justify-content: center;
 }
 
 .testimonial-card {
   background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  margin: 10px;
+  padding: 15px; /* Adjusted padding for smaller screens */
+  margin: 5px; /* Adjusted margin for smaller screens */
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow for smaller screens */
   cursor: pointer;
   transition: transform 0.3s;
+  width: 100%; /* Ensure cards take full width on small screens */
+  max-width: 300px; /* Max width to maintain a good size */
 }
 
 .testimonial-detail {
+  position: absolute;
+  top: 20%;
+  left: 40%;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  padding: 15px; /* Adjusted padding for smaller screens */
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 90%; /* Ensure detail fits within screen */
   margin: 0 auto;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow for smaller screens */
 }
 
 .testimonials-img {
-  width: 100px;
+  width: 80px; /* Adjusted image size for smaller screens */
+  height: 80px; /* Ensure images remain square */
   object-fit: cover;
-  border-radius:100%;
-
+  border-radius: 50%;
 }
+
 .testimonial-detail button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 15px; /* Adjusted margin for smaller screens */
+  padding: 8px 16px; /* Adjusted padding for smaller screens */
   background-color: #ff6f61;
   border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1rem; /* Adjusted font size for smaller screens */
 }
 
 .testimonial-detail button:hover {
   background-color: #e55d50;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 1.5rem; /* Further reduced font size for small screens */
+  }
+
+  .testimonial-card {
+    max-width: 80%; Allow cards to be full-width on very small screens
+    
+  }
+
+  .testimonial-detail {
+    max-width: 60%; Ensure the detail modal fits within the viewport
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+
+  .testimonials-img {
+    width: 70px; /* Further adjusted image size */
+    height: 70px;
+  }
+
+  .testimonial-detail button {
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-title {
+    font-size: 1.2rem; /* Further reduced font size for very small screens */
+  }
+
+  .testimonial-card {
+    max-width: 100%; /* Ensure full-width on very small screens */
+    padding: 10px; /* Adjusted padding for small screens */
+  }
+
+  .testimonial-detail {
+    padding: 10px; /* Adjusted padding for small screens */
+  }
+
+  .testimonials-img {
+    width: 60px; /* Further adjusted image size */
+    height: 60px;
+  }
+
+  .testimonial-detail button {
+    font-size: 0.8rem; /* Adjusted font size for very small screens */
+  }
 }

@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => (
-  <header >
+  <header>
     <div className="navbar">
-
-    <div className="logo">
-      {/* <svg
+      <div className="logo">
+        {/* <svg
         aria-hidden="true"
         focusable="false"
         viewBox="0 0 24 24"
@@ -22,25 +21,28 @@ const Header = () => (
           clipRule="evenodd"
         ></path>
       </svg> */}
-        <img src="images/brand_logo.png" alt="logo" />
-
+        <Link to={"/"}>
+          {" "}
+          <img src="images/brand_logo.png" alt="logo" />
+        </Link>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/features">Features</Link>
+          </li>
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li>
-          <Link to="/features">Features</Link>
-        </li>
-        <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
-        </li>
-      </ul>
-    </nav>
-    </div>
-
   </header>
 );
 

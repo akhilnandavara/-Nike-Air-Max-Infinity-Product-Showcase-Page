@@ -1,44 +1,77 @@
 /* src/components/HeroSection.css */
+
 .hero-content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 1;
-    /* padding: 0 20px; */
-  }
-  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+
+.hero-btn {
+  margin-top: 20px;
+}
+
+.hero-btn button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn button:hover {
+  background-color: #e65c50;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .hero-title {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
+    font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
-  }
-  
-  .hero-btn {
-    margin-top: 20px;
-  }
-  
-  .hero-btn button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 15px 30px;
     font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
   }
-  
-  .hero-btn button:hover {
-    background-color: #e65c50;
+
+  .hero-btn button {
+    padding: 12px 25px;
+    font-size: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+
+  .hero-btn button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
