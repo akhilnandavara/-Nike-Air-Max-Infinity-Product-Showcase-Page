@@ -7,12 +7,11 @@ import Features from './pages/Features';
 import Shop from './pages/Shop';
 import ContactUs from './pages/ContactUs';
 import './App.css';
-// Add this JavaScript code in your main JavaScript file (e.g., main.jsx or App.jsx)
 
 
 const App = () => (
   <Router>
-    <Header />
+    <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/features" element={<Features />} />

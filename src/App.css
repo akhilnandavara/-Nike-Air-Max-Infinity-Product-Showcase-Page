@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap");
 
 :root {
-  --red: #d01c28;
+  --red: #ff6f61;
   --gray: #2e2e2e;
 }
 
@@ -19,15 +19,19 @@ body {
   max-width: 1200px;
 }
 
-button {
-  all: unset;
-  padding: 6px 16px;
-  background: var(--red);
-  height: 30px;
+button{
+  background-color: var(--red);
   color: white;
-  font-weight: 500;
-  
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c50;
 }
 
 .logo {
@@ -37,35 +41,33 @@ button {
 header {
   background: whitesmoke;
   /* color: white; */
-  position: sticky ;
+  position: sticky;
   top: 0;
   z-index: 1000;
-
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   height: 74px;
   margin: 0 auto;
-  
+
   max-width: 1200px;
   padding: 0 24px;
   align-items: center;
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   gap: 24px;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
   color: var(--gray);
   /* color: white; */
   cursor: pointer;
 }
-
 
 .shopping p {
   font-size: 12px;
@@ -79,4 +81,32 @@ nav li a{
 
 .shop-name img {
   cursor: pointer;
+}
+
+
+/* Global scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color); /* Track color */
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: var(--highlight-color); Scrollbar color */
+  background-color: #e65c50;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2e00; /* Scrollbar color on hover */
+}
+
+/* Firefox scrollbar styles */
+.scrollable {
+  scrollbar-width: thin; /* Set scrollbar width to thin */
+  scrollbar-color: var(--highlight-color) var(--background-color); /* Scrollbar color and track color */
 }
