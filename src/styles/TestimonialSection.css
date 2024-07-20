@@ -4,7 +4,9 @@
   padding: 30px 15px; /* Adjusted padding for smaller screens */
   height: auto; /* Allows height to adapt based on content */
   background-color: rgba(248, 248, 248, 0.6); /* Semi-transparent background for readability */
-min-height: 25rem; /* Ensure a minimum height to prevent content from being too squished */
+  min-height: 25rem; /* Ensure a minimum height to prevent content from being too squished */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .testimonial-title {

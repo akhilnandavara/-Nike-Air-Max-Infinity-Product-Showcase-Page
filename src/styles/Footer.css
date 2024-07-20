@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap:1rem;
     margin-bottom: 20px;
   }
    
@@ -28,6 +28,12 @@
     transition: color 0.3s;
   }
 
+  .footer-logo{
+    width: 4rem;
+    
+  }
+
+
   .footer-link:hover {
     color: var(--highlight-color);
   }
@@ -35,6 +41,7 @@
   .footer-social {
     margin-bottom: 1rem;
   }
+
   
   .social-link {
     color: var(--primary-color);

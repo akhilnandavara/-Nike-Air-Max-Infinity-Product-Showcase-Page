@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               className="footer-logo"
               src="https://www.nike.com/favicon.ico?v=1"
-              width={50}
+              
               alt="logo"
             />
           </Link>

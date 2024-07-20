@@ -44,6 +44,7 @@ const TestimonialSection = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  
   return (
     <Parallax
       bgImage="/images/testimonial-bg.png"
