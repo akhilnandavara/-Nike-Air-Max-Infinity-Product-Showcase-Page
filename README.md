@@ -52,6 +52,7 @@ This project aims to create a visually engaging single-page website that showcas
 - **Performance Optimization**: Prioritize a fast and smooth user experience across all devices.
 
 # Folder Structure
+```
 nike-air-max-showcase/
 ├── public/
 │   ├── images/
@@ -80,7 +81,7 @@ nike-air-max-showcase/
 ├── vite.config.js
 ├── package.json
 └── .gitignore
-
+```
 ## Installation
 
 1. Clone the repository:
